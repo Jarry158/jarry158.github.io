@@ -128,7 +128,7 @@
     <!-- 计时器 -->
     <script>
         function timer() {
-            var start = new Date(2013, 03, 24, 21, 14, 00); // 2020.07.31 13:14:00
+            var start = new Date(2013, 03, 24, 13, 14, 00); // 2020.07.31 13:14:00
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
@@ -235,6 +235,15 @@
                 }
             });
         });
+    </script>
+
+    <!-- Valine 评论系统； 由 LeanCloud 管理数据 -->
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '8r5qe5z3NsA1kQaRxAuUJish-gzGzoHsz',
+            appKey: 'fdJFGLSKX61VDJlUd6rHGj5r'
+        })
     </script>
 
     <!-- 底部波浪 -->
